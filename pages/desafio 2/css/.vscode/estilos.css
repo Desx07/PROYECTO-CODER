@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url(https://wallpapercave.com/wp/wp5569369.jpg);
+    background-size: 100%;
+}
+
+.parent {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: transparent;
+
+}
+h1{
+    margin-top: 0;
+    margin-bottom: var(--typography-spacing-vertical);
+    color: #0c6bb4;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+footer {
+    padding-left: 45% !important;
+}
+#nav-1{
+    display: none;
+}
+#nav-2{
+    display: none;
+}
+#Pcs{
+    display: block;
+}
+#Objetos1{
+    display: none;
+}
+input, select, textarea {
+    --background-color: var(--form-element-background-color);
+    --border-color: #c62828;
+    --color: var(--form-element-color);
+    --box-shadow: none;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    outline: 0;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    color: var(--color);
+    font-weight: var(--font-weight);
+    transition: background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition);
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+  }

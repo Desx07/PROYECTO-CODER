@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url("https://wallpapercave.com/wp/wp5569369.jpg")no-repeat;
+    background-size: 100%;
+    width: 100%;
+    margin: 0;
+   
+}
+html {
+        background-color: transparent;
+}
+.parent {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+footer {
+    padding-left: 45% !important;
+}
+#nav-1{
+    display: none;
+}
+#nav-2{
+    display: none;
+}
+#Pcs{
+    display: block;
+}
+#Objetos1{
+    display: none
+}
+h1 {
+    margin-top: 0;
+    color: #0c6bb4;
+    
+}
+.container {
+    max-width: 500px;
+}
+a.secondary {
+    background-color:#1095c1;
+    margin-left: -40px;
+}

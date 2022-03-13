@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: url("https://wallpapercave.com/wp/wp5569369.jpg");
+  background-size: 100%;
+}
+body header {
+  width: 100%;
+  background-color: #040708;
+  box-shadow: 0px 4px 15px white;
+}
+body header h1 {
+  text-align: center;
+  color: #009dff;
+  text-decoration: underline rgba(0, 0, 0, 0.281);
+  font-size: 1.8rem;
+}
+body header a {
+  text-decoration: none;
+  color: #ad4cfd;
+  font-size: 1.4rem;
+}
+body main {
+  min-height: 100vh;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+
+}
+body main div {
+  margin: 1rem;
+  width: 60%;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 75px 75px 75px 75px;
+  box-shadow: inset 2px 2px 5px rgb(89, 163, 126);
+}
+body main div a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.4rem;
+}
+body main div:hover {
+  background-color: #5f81f1;
+  box-shadow: 2px 2px 5px steelblue;
+}
+body main h2, body main p {
+  margin: 2rem;
+  text-align: center;
+  color: #e6ee71;
+  font-size: 1.8rem;
+}
+body footer {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px -3px 15px white;
+}
+body footer h3 {
+  text-align: center;
+  color: #00b1ff;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

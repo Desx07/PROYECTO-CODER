@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos - Coderhouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/variables.js"></script>
+    <script src="js/objetoCotizador.js"></script>
+</head>
+<body>
+    <h1>Productos en stock</h1>    
+    <p>Costos de productos.</p>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <label for="select">Seleccione el producto:</label>
+                <select id="seleccion" class="estilo" onchange="seleccion()">
+
+                    <option id="blanco"></option>
+                    <option id="opcion1">Monitor samsung</option>
+                    <option id="opcion2">Tablet S4</option>
+                    <option id="opcion3">Grabadora redragon</option>
+    
+                </select>
+                <div id="Pcs">
+            <p>(*) Precio del +IVA: 21%</p>
+            <p>(*) Precio de descuento: 15%</p>
+            </div>
+        <footer>
+            <a href="#" role="button" onclick="Mostrarmonitor();" class="secondary">COTIZAR</a>
+        </footer>
+        <div id="Objetos1">
+            <p id="blanco1" class="parrafo">Elige una opción por favor.</p>
+            <p id="texto1" class="parrafo"><b>Producto seleccionado:</b></br>
+                Monitor samsung 24"</br>
+                Precio: $55.000</br>
+                +iva 21%: $66550</br>
+                El precio total con el descuento del 15% es:</br>$56.567,5"</br></p>
+            <p id="texto2" class="parrafo"><b>Producto seleccionado:</b></br>
+                Tablet samsung 10"</br>
+                Precio: $40.000</br>
+                +iva 21%: $48.400</br>
+                El precio total con el descuento del 15% es:</br>$41.140"</br></p>
+            <p id="texto3" class="parrafo"><b>Producto seleccionado:</b></br>
+                Grabadora Redragon"</br>
+                Precio: $18.000</br>
+                +iva 21%: $21.780</br>
+                El precio total con el descuento del 15% es:</br>$18.513"</br></p>
+        </div>
+    </div>
+    </article>
+</body>
+</html>
