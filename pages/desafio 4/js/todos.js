@@ -4,13 +4,13 @@ const productos = {
     nombre:"Greymon",
     precio: '1350',
     descripcion: 'Un Digimon dinosaurio cuya piel craneal se ha endurecido de manera que se cubre en un caparazón como de escarabajo rinoceronte. ',
-    srcImg: 'https://static.wikia.nocookie.net/digimon/images/5/56/Greymon_b.jpg/revision/latest?cb=20120506134026'
+    src: url("https://static.wikia.nocookie.net/digimon/images/5/56/Greymon_b.jpg/revision/latest?cb=20120506134026")
   },
   producto2: {
     nombre: 'Devimon',
     precio: '1750',
     descripcion: 'Un Digimon Ángel Caído, su origen era de los Digimon de las especies Angemon, se convirtió en un ángel caído cuando cayó al Área Oscura, en la que existe una distorsión espacial del Mundo Digital.',
-    srcImg: 'https://static.wikia.nocookie.net/digimon/images/9/9a/Devimon_b.jpg/revision/latest/scale-to-width-down/320?cb=20120212210014'
+    src: url("https://static.wikia.nocookie.net/digimon/images/9/9a/Devimon_b.jpg/revision/latest/scale-to-width-down/320?cb=20120212210014")
   },
   producto3: {
     nombre:"Bidramon",
@@ -28,13 +28,13 @@ const productos = {
     nombre:"Darcmon",
     precio: '1350',
     descripcion: 'Un Digimon Ángel de bajo rango que tiene la apariencia de una mujer. Su figura que siempre se corta a través de la vanguardia a la batalla.',
-    srcImg: 'https://static.wikia.nocookie.net/digimon/images/c/ce/Darcmon_b.jpg/revision/latest?cb=20200513211737'
+    src: url("'https://static.wikia.nocookie.net/digimon/images/c/ce/Darcmon_b.jpg/revision/latest?cb=20200513211737")
   },
   producto6: {
     nombre:"Omegamon",
     precio: '2500',
     descripcion: 'Un Digimon Caballero Santo y un miembro de los Caballeros Reales, es el producto de la fusión de los Cazadores de Virus WarGreymon y MetalGarurumon.',
-    srcImg: 'https://static.wikia.nocookie.net/digimon/images/2/22/Omegamon_b.jpg/revision/latest?cb=20200514183308&path-prefix=es'
+    src: url("https://static.wikia.nocookie.net/digimon/images/2/22/Omegamon_b.jpg/revision/latest?cb=20200514183308&path-prefix=es")
 },}
 // Se captura el template de los productos
 const templateProd = document.getElementById('template-prod').content
