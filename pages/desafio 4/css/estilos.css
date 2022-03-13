@@ -9,6 +9,7 @@ body {
   background: url('https://wallpapercave.com/wp/wp5569369.jpg')no-repeat;
   background-size: 200%;
   justify-content: center;
+  height: 100vh;
 }
 h1 {
   text-align: center;
