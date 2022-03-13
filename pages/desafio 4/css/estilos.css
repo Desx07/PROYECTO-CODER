@@ -1,216 +1,275 @@
-body {
+* {
     padding: 0;
-    margin: 200px;
-    margin-top: 0px;
-  box-sizing: border-box;
-  font-family: Optima, sans-serif;
-  --border: 1px solid hsla(240, 25% ,50% , 0.3);
-  --border-table: 1px solid hsla(240, 25% ,50% , 01);
-  background: url('https://wallpapercave.com/wp/wp5569369.jpg')no-repeat;
-  background-size: 200%;
-  justify-content: center;
-  height: 100vh;
-}
-h1 {
-  text-align: center;
-  color: white;
-}
-
-/* DESDE AQUI EMPIEZA LA SECCIÓN DEL CARRITO */
-.tabla-calculo {
-  display: flex;
-  justify-content: center;
-}
-.tabla {
-  width:80%;
-  table-layout: fixed;
-  color: white;
-  margin-bottom: 2rem;
-  empty-cells: hide;
-  border-radius: 10px;
-}
-.titulo-tabla {
-  font-size: 1.5rem;
-  padding: .5rem;
-}
-.border-top-left {
-  border-top-left-radius: -10px;
-}
-.border-top-right {
-  border-top-right-radius: -10px;
-}
-.border-bottom-right {
-  border-bottom-right-radius: -10px;
-}
-.border-bottom-left {
-  border-bottom-left-radius: -10px;
-}
-th {
-  font-size: 1.1rem;
-  background: hsla(210, 60%, 70%, .7);
-}
-th, td, tr {
-  border: var(--border-table);
-  text-align: center;
-  padding: .4rem 0;
-}
-td {
-  background: hsla(210, 40%, 90%, .9);
-  color: black;
-}
-.precio-tabla::before {
-  content: 'DA';
-  padding-right: 0.4rem;
-}
-.button {
-  margin: 0 .4rem;
-  border: var(--border-table);
-  background: hsla(250, 70%, 50%, .7);
-  color: white;
-  cursor: pointer;
-}
-.button2 {
-margin: 0 .4rem;
-  border: var(--border-table);
-  background: hsl(191deg 68% 37% / 70%);;
-  color: white;
-  cursor: pointer;
-}
-.negrita {
-  font-weight: bold;
-}
-.none {
-  background: transparent;
-  border: none;
-}
-
-
-/* DESDE AQUI EMPIEZA LA SECCIÓN DE LOS PRODUCTOS */
-.cartola {
-  height: 300px;
-  width: 230px;
-  border-radius: 0.35rem;
-  background: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-shadow:0px 0px 1rem hsla(240, 100%, 90%, 0.3);
-  transition: transform 0.1s;
-  overflow: hidden;
-  margin: 1rem;
-}
-.cartola:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  box-shadow: 0 0 2rem hsla(240, 100%, 90%, 0.5);
-}
-/* Imagen */
-.contenedor-img {
-  height: 127px;
-  overflow: hidden;
-}
-img {
-  width: 100%;
-}
-/* Nombre y descripción del producto */
-.div-info {
-  flex: 1;
-  border-bottom: var(--border);
-  overflow: hidden;
-}
-.nombre-prod {
-  margin: 0;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 0.2rem 0;
-}
-.separador {
-  width: 80%;
-  margin: .2rem auto;
-  border: none;
-  border-top: var(--border);
-}
-.descripcion-prod {
-  margin: 0;
-  font-size: 0.8rem;
-  padding: 0.2rem 1rem;
-  overflow: hidden;
-  opacity: .7;
-}
-/* Precio y Boton Carrito */
-.div-precio-boton {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: .5rem;
-}
-.precio {
-  margin: 0 .5em;
-}
-.precio::before {
-  content: 'Darcana:';
-  padding-right: 0.3rem;
-}
-.boton {
-  background: hsla(210, 40%, 70%, .7);
-  cursor: pointer;
-  border: var(--border);
-  font-size: 1rem;
-  width: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.15);
-}
-.boton:hover {
-  color: rgba(255, 255, 255, .8);
-  background: hsla(210, 40%, 50%, 1);
-  box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.25);
-}
-.boton::after {
-  content: '';
-  display: block;
-  height: 20px;
-  width: 20px;
-  background: url(https://cdn-icons-png.flaticon.com/512/1656/1656456.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.boton:hover::after {
-  content: '';
-  display: block;
-  height: 20px;
-  width: 20px;
-  background: url(https://cdn-icons-png.flaticon.com/512/1656/1656456.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.carrito {
-  width: 18px;
-}
-/* Contenedor de todos los productos */
-.contenedor-productos {
-    display: inline-flex;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    font-family: Optima, sans-serif;
+    --border: 1px solid rgba(35, 35, 43, 0.3);
+    --border-table: 1px solid hsla(240, 25%, 50%, 01);
+    background: url('https://wallpapercave.com/wp/wp5569369.jpg')no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+  }
+  
+  /* DESDE AQUI EMPIEZA LA SECCIÓN DEL CARRITO */
+  .tabla-calculo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+  
+  }
+  
+  .tabla {
+    background-color: rgb(157, 167, 154);
+    width: 80%;
+    table-layout: fixed;
+    color: white;
+    margin-bottom: 2rem;
+    empty-cells: hide;
+    border-radius: 10px;
+  }
+  
+  .titulo-tabla {
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  
+  .border-top-left {
+    border-top-left-radius: -10px;
+  }
+  
+  .border-top-right {
+    border-top-right-radius: -10px;
+  }
+  
+  .border-bottom-right {
+    border-bottom-right-radius: -10px;
+  }
+  
+  .border-bottom-left {
+    border-bottom-left-radius: -10px;
+  }
+  
+  th {
+    font-size: 1.1rem;
+    background: hsla(210, 60%, 70%, .7);
+  }
+  
+  th,
+  td,
+  tr {
+    border: var(--border-table);
+    text-align: center;
+    padding: .4rem 0;
+  }
+  
+  td {
+    background: hsla(210, 40%, 90%, .9);
+    color: black;
+  }
+  
+  .precio-tabla::before {
+    content: 'DA';
+    padding-right: 0.4rem;
+  }
+  
+  .button {
+    margin: 0 .4rem;
+    border: var(--border-table);
+    background: hsla(250, 70%, 50%, .7);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    margin: 0 .4rem;
+    border: var(--border-table);
+    background: hsl(191deg 68% 37% / 70%);
+    ;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .negrita {
+    font-weight: bold;
+  }
+  
+  .none {
+    background: transparent;
+    border: none;
+  }
+  
+  
+  /* DESDE AQUI EMPIEZA LA SECCIÓN DE LOS PRODUCTOS */
+  .contenedor-productos {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 29rem;
-    margin-top: 74px;
-    margin: -374px;
-}   
-.content{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+  }
+  
+  .content{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    img {
+      background-size: 50%;
+      width: 55%;
+      justify-content: center;
+      margin:auto;
+    }
+  .cartola {
+    height: 400px;
+    width: 33.3%;
+    max-width: 350px;
+    border-radius: 0.35rem;
+    background: #f4f4f4;
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-img {
-    background-size: 50%;
-    width: 55%;
-    justify-content: center;
-    margin: 50px;
-    margin-top: auto;
-}
-#Objetos2{
-    display: none};
-    
-#parrafo{
-        display: none};
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 1rem hsla(240, 100%, 90%, 0.3);
+    transition: transform 0.1s;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 5px;
+  }
+  
+  .cartola:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 0 2rem hsla(240, 100%, 90%, 0.5);
+  }
+  
+  /* Imagen */
+  .contenedor-img {
+    height: 200px;
+    background-color: red;
+    margin: auto;
+  }
+  
+  img {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+  
+  }
+  
+  /* Nombre y descripción del producto */
+  .div-info {
+    flex: 1;
+    border-bottom: var(--border);
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .nombre-prod {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .separador {
+    width: 80%;
+    margin: .2rem auto;
+    border: none;
+    border-top: var(--border);
+  }
+  
+  .descripcion-prod {
+    margin: 0;
+    font-size: 0.8rem;
+    overflow: hidden;
+    opacity: .7;
+    width: 100%;
+  
+  }
+  
+  /* Precio y Boton Carrito */
+  .div-precio-boton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem;
+  }
+  
+  .precio {
+    margin: 0 .5em;
+  }
+  
+  .precio::before {
+    content: 'Darcana:';
+    padding-right: 0.3rem;
+  }
+  
+  .boton {
+    background: hsla(210, 40%, 70%, .7);
+    cursor: pointer;
+    border: var(--border);
+    font-size: 1rem;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.15);
+  }
+  
+  .boton:hover {
+    color: rgba(255, 255, 255, .8);
+    background: hsla(210, 40%, 50%, 1);
+    box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.25);
+  }
+  
+  .boton::after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url(https://cdn-icons-png.flaticon.com/512/1656/1656456.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .boton:hover::after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url(https://cdn-icons-png.flaticon.com/512/1656/1656456.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .carrito {
+    width: 18px;
+  }
+  
+  /* Contenedor de todos los productos */
+  
+  #Objetos2 {
+    display: none
+  };
+  
+  
+  
+  #parrafo {
+    display: none
+  };
