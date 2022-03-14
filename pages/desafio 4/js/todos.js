@@ -4,7 +4,7 @@ const productos = {
     nombre:"Greymon",
     precio: '1350',
     descripcion: 'Un Digimon dinosaurio cuya piel craneal se ha endurecido de manera que se cubre en un caparazón como de escarabajo rinoceronte. ',
-    <img src="https://static.wikia.nocookie.net/digimon/images/5/56/Greymon_b.jpg/revision/latest?cb=20120506134026">
+    background:url("https://static.wikia.nocookie.net/digimon/images/5/56/Greymon_b.jpg/revision/latest?cb=20120506134026")
   },
   producto2: {
     nombre: 'Devimon',
