@@ -92,6 +92,7 @@
     background: hsla(250, 70%, 50%, .7);
     color: white;
     cursor: pointer;
+    padding: 0px 5px;
   }
   
   .button2 {
