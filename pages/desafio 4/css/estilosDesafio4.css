@@ -33,7 +33,7 @@
   }
   
   .tabla {
-    background-color: rgb(157, 167, 154);
+    background-color: rgb(110 132 165);
     width: 80%;
     table-layout: fixed;
     color: white;
@@ -160,7 +160,7 @@
   /* Imagen */
   .contenedor-img {
     height: 200px;
-    background-color: red;
+    background-color: #f4f4f4;
     margin: auto;
   }
   
